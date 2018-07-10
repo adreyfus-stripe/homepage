@@ -76,7 +76,7 @@ html {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #32325d;
-  height: 100%;
+  min-height: 100%;
   background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
 }
 
@@ -141,7 +141,7 @@ h2 {
 }
 
 .preview img {
-  max-width: 350px;
+  width: 100%;
 }
 
 section {
@@ -168,13 +168,13 @@ section a:visited {
 .preview {
   flex: 1;
   padding: 20px;
-  max-width: 390px;
+  max-width: 30%;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
     0 5px 15px rgba(0, 0, 0, 0.07);
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  min-height: 650px;
+  min-height: 500px;
   position: relative;
 }
 
@@ -292,6 +292,11 @@ a.button:hover {
   bottom: 20px;
 }
 
+a.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 768px) {
   .demos,
   .tools,
@@ -301,7 +306,7 @@ a.button:hover {
 
   .preview {
     margin-bottom: 15px;
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .preview img {
