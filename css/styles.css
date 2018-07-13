@@ -88,7 +88,7 @@ html {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 
 header {
@@ -101,7 +101,7 @@ header {
 nav a {
   margin-left: 40px;
   cursor: pointer;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-decoration: none;
   color: #6772e5;
   font-weight: 600;
@@ -145,10 +145,6 @@ h2 {
   background: linear-gradient(90deg, #e4e9f0, rgba(228, 233, 240, 0));
 }
 
-.preview img {
-  width: 100%;
-}
-
 section {
   margin-bottom: 40px;
 }
@@ -156,6 +152,7 @@ section {
 p {
   color: #6b7c93;
   font-size: 1.6rem;
+  line-height: 2.2rem;
   font-weight: 500;
 }
 
@@ -172,7 +169,6 @@ section a:visited {
 .preview {
   flex: 1;
   padding: 20px;
-  max-width: 30%;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -180,6 +176,15 @@ section a:visited {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   min-height: 500px;
   position: relative;
+}
+
+.preview img {
+  width: 100%;
+}
+
+.preview.typographic {
+  margin: 0 30px;
+  
 }
 
 .tools,
@@ -229,7 +234,7 @@ section a:visited {
 }
 
 .tools a:last-child,
-.client-libs a:first-child {
+.client-libs a:last-child {
   margin-right: 0;
 }
 
@@ -308,6 +313,9 @@ a.button:hover {
     flex-direction: column;
   }
 
+  .preview.typographic {
+    margin: 0 0 15px 0; /* Reset left and right margin */
+  }
   .preview {
     margin-bottom: 15px;
     min-height: 500px;
@@ -326,7 +334,7 @@ a.button:hover {
   }
 
   .tools a:last-child,
-  .client-libs a:first-child {
+  .client-libs a:last-child {
     margin-right: 15px;
   }
 }
