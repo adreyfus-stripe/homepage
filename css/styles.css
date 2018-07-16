@@ -167,8 +167,9 @@ section a:visited {
 }
 
 .preview {
-  flex: 1;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  padding: 20px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -297,8 +298,7 @@ a.button:hover {
   color: #fff;
   background: #6772e5;
   max-width: 150px;
-  position: absolute;
-  bottom: 20px;
+  margin-top: 30px;
 }
 
 a.button:hover {
@@ -336,5 +336,12 @@ a.button:hover {
   .tools a:last-child,
   .client-libs a:last-child {
     margin-right: 15px;
+  }
+
+  a.button,
+  a.button:hover,
+  a.button:visited {
+    max-width: 100%;
+    text-align: center;
   }
 }
